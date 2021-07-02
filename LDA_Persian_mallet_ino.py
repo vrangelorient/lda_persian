@@ -16,11 +16,11 @@ from sklearn.manifold import TSNE
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-with open(os.path.join("C:/BBC", "result.json") ,'r', encoding='utf-8') as a:
+with open(os.path.join("BBC.json") ,'r', encoding='utf-8') as a:
     texts1 = json.load(a)
-with open(os.path.join("C:/VOA2", "result.json") ,'r', encoding='utf-8') as b:
+with open(os.path.join("VOA.json") ,'r', encoding='utf-8') as b:
     texts2 = json.load(b)
-with open(os.path.join("C:/Radio Farda", "result.json") ,'r', encoding='utf-8') as c:
+with open(os.path.join("Radio_Farda.json") ,'r', encoding='utf-8') as c:
     texts3 = json.load(c)
 pprint(texts3)
 
@@ -82,7 +82,7 @@ print(words_tri[:10])
 
 
 
-with open("D:/persian", 'r', encoding='utf-8') as f:
+with open("persian_stop_words", 'r', encoding='utf-8') as f:
     persian_words = f.read()
 
 

@@ -201,7 +201,7 @@ tsne_lda['topic'] = topic_num
 
 plt.figure(figsize=(15,15))
 sns.scatterplot(data=tsne_lda, x=tsne_lda[0], y=tsne_lda[1], hue="topic", palette=sns.color_palette("hls", 5)+sns.color_palette("Paired"), markers=True) #sns.color_palette("hls", 5)
-plt.savefig('graph.png')
+plt.savefig('tsne.png')
 
 
 
